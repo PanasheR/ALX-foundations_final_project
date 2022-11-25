@@ -1,9 +1,7 @@
-# ChoiceUrl - url-shortener
-
-![landing page](https://github.com/PanasheR/url-shortener/blob/main/choiceurl/static/icon.png)
+# UrlByChoice - url-shortener
 
 ## Project Description <br>
-Choiceurl is a web application that allows users to paste long urls for webstites and files, create short names for the urls and copy the link to the short names to their clipboard
+UrlByChoice is a web application that allows users to paste long urls for webstites and files, create short names for the urls and copy the link to the short names to their clipboard
 <br>It also helps users access the codes they created by making use of the user's browser session data collected using cookies and displays the user's short names in form of a list 
 the home page.<br>
 
@@ -43,9 +41,9 @@ This project is a portofolio project for ALX Software Engineering Foundation Pro
 | `requirements.txt` | Has modules needed for the flask app to function |
 | `Procfile` | This file is the one that shows heroku that we are using a gunicorn server for deployement of our app|
 | `Pipfile.lock` | ntended to specify, based on the packages present in Pipfile, which specific version of those should be used, avoiding the risks of automatically upgrading packages that depend upon each other and breaking your project dependency tree.|
-| `choiceurl` | Directory/module that contains the application |
+| `app` | Directory/module that contains the application |
 | `__init__.py ` | Creates the create_app() function that calls the app instance and also registers the app blueprint |
-| `choiceurl.py ` | Main file that creates all the routes for the application, renders templates, handles errors and creates API endpoints |
+| `app.py ` | Main file that creates all the routes for the application, renders templates, handles errors and creates API endpoints |
 | `conftest.py` | Calls the app for tests using pytest |
 | `test_app.py` | Files performs one test for the shorten button on the home page|
 | `static` | Has static files such as css file and images|
@@ -58,10 +56,8 @@ I decided to use flask for backend because it is best for the microservices I ne
 I decided to use Heroku for deployment because it is easier to push the files to heroku for deployment. 
 
 ## How to deploy
-1. First clone this repo:
-   ``` git clone https://github.com/PanasheR/url-shortener.git```
-2. cd into the repo
-   ``` cd url-shortener ```
+1. First clone this repo<br>
+2. cd into the repo<br>
 3. install pipenv that serves both for pip and virtual environment
    ```pipenv install```
 4. creates a virtual environment in that directory using pipenv
